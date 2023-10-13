@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141414;
+    color: white;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: chocolate;
+}
+
+.swal-modal{
+    background-color: #555;
+}
+
+header, footer{
+    background-color: #555555;
+}
+
+ul{
+    display: flex;
+    gap: 5px;
+}
+
+.fila{
+    display: flex;
+}
+
+.fila .card{
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+}
+img{
+    width: 100%;
+}
