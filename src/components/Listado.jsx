@@ -7,6 +7,7 @@ function Listado(){
     const token = localStorage.getItem("token")
     const URL_API = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=es-ES&page=1&sort_by=popularity.desc&api_key=25eb32f6790045e0ecc9f8da6ad3f735"
     //https://api.themoviedb.org/3/eJKmexmCLwuxOxlAURSMnBVkfmY.jpg
+    //https://api.themoviedb.org/3/movie/movie_id?language=es-ES&api_key=25eb32f6790045e0ecc9f8da6ad3f735
     const [moviesList, setMoviesList] = useState([])
 
     useEffect(() => {
@@ -34,7 +35,7 @@ function Listado(){
                                 <div className="card-body">
                                     <h5>{mov.title}</h5>
                                     <p>{mov.overview}</p>
-                                    <Link to="/">Detalles</Link>
+                                    <Link to={"/detalles?id=" + mov.id}>Detalles</Link>
                                 </div>
                             </div>
                         )
