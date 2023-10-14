@@ -5,10 +5,10 @@ import { useEffect } from "react"
 
 function Login(){
     const history = useHistory()
-    let token = localStorage.getItem("token")
+    let token = sessionStorage.getItem("token")
     
     useEffect(()=>{
-        const token = localStorage.getItem("token")
+        const token = sessionStorage.getItem("token")
         if (token != null){
             history.push("/listado")
         }
@@ -43,7 +43,7 @@ function Login(){
         .then(res => {
             swal(<h2>Usuario Logueado Correctamente</h2>)
             const {token} = res.data
-            localStorage.setItem("token", token)
+            sessionStorage.setItem("token", token)
             history.push("/listado")
         })
     }

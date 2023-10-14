@@ -42,4 +42,9 @@ ul{
 }
 img{
     width: 100%;
+    max-width: 300px;
+}
+.datos{
+    display: flex;
+    gap: 20px;
 }
