@@ -9,6 +9,21 @@ body{
     color: white;
 }
 
+.favourite-btn{
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
 a{
     display: inline-block;
     text-decoration: none;
@@ -23,11 +38,25 @@ a{
 
 header, footer{
     background-color: #555555;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header form button, header form input{
+    padding: 5px;
 }
 
 ul{
     display: flex;
     gap: 5px;
+    list-style-type: none;
 }
 
 .fila{
@@ -39,6 +68,7 @@ ul{
     width: 100%;
     text-align: center;
     border: 1px solid;
+    position: relative;
 }
 img{
     width: 100%;

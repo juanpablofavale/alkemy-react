@@ -1,0 +1,5 @@
+mostrar toast al agregar o quitar favoritos
+dar estilos al sitio
+cambiar color del corazon si ya esta en favoritos
+ver si cambiar corazon por x en favoritos al eliminar
+cambiar nombre de archivo favourites y todas sus llamadas
