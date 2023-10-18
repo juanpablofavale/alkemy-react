@@ -1,9 +1,9 @@
-function handleFavourite(e){
+function handleFavorite(e){
     let favs = JSON.parse(localStorage.getItem("favs")) || []
     const btn = e.currentTarget
     const parent = btn.parentElement
     const imgURL = parent.querySelector("img").getAttribute("src")
-    const title = parent.querySelector("h5").innerText
+    const title = parent.querySelector("h3").innerText
     const overview = parent.querySelector("p").innerText
     const id = btn.dataset.movieId
 
@@ -22,4 +22,4 @@ function handleFavourite(e){
     return favs
 }
 
-export default handleFavourite
+export default handleFavorite

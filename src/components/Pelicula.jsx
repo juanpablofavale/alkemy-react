@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom"
-import handleFavourite from "../utils/favourite"
+import handleFavorite from "../utils/handleFavorite"
 
 function Pelicula({ mov, setFavs }){
-    console.log(setFavs)
     const handleClick = (e) => {
-        setFavs(handleFavourite(e))
+        setFavs(handleFavorite(e))
     }
 
     return (
@@ -16,7 +15,7 @@ function Pelicula({ mov, setFavs }){
             }
             <button onClick={handleClick} className="favourite-btn" data-movie-id={mov.id}>🖤</button>
             <div className="card-body">
-                <h5>{mov.title}</h5>
+                <h3>{mov.title}</h3>
                 <p>{mov.overview}</p>
                 <Link to={"/detalles/" + mov.id}>Detalles</Link>
             </div>
